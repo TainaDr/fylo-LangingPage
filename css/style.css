@@ -173,8 +173,7 @@ blockquote .client {
 }
 
 .learn-more a {
-    color: hsl(170, 45%, 43%);
-    ;
+    color: hsl(170, 45%, 43%);;
 }
 
 /*---------------------------------- seção 3 ----------------------------------*/
@@ -263,11 +262,16 @@ footer {
 }
 
 .social-links i {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
     margin-left: 5px;
     border: 1px solid white;
     border-radius: 50%;
     padding: 5px;
     color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .logo-container {
@@ -275,7 +279,6 @@ footer {
 }
 
 /*----------------------------- Responsividade  -----------------------------*/
-
 @media screen and (max-width: 760px) {
     body {
         font-size: 16px;
@@ -296,8 +299,8 @@ footer {
         text-align: start;
     }
 
-    header {
-        margin: 30px;
+    header  {
+        margin: 30px ;
     }
 
     #logo-header {
@@ -305,8 +308,7 @@ footer {
     }
 
     header nav ul {
-        flex-direction: row;
-        ;
+        flex-direction: row;;
         gap: 10px;
     }
 
@@ -322,8 +324,7 @@ footer {
         gap: 20px;
     }
 
-    #text-intro,
-    .learn-more span {
+    #text-intro, .learn-more span {
         text-align: center;
     }
 
@@ -349,7 +350,7 @@ footer {
         width: 90%;
     }
 
-    .early-access p {
+    .early-access p{
         text-align: center;
         margin: 0;
         font-size: 16px;
@@ -383,17 +384,16 @@ footer {
     .logo-container {
         text-align: start;
         padding: 20px 0 0 0;
-    }
-
+    } 
     .footer-container {
-        display: flex;
+        display: flex; 
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; 
         gap: 20px;
         text-align: start;
         padding: 20px 10px 10px 10px;
     }
-
+    
     .contact-info {
         padding: 20px 0 0 0;
     }
