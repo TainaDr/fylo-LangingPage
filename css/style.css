@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*---------------------------------- Configurações globais ----------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Open Sans", serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+}
+
+/*---------------------------------- header ----------------------------------*/
+
+header {
+    margin: 40px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+header nav li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Raleway", serif;
+    font-weight: 400;
+    font-weight: bold;
+    list-style-type: none;
+    color: hsl(243, 87%, 12%);
+
+}
+
+/*---------------------------------- seção 1 ----------------------------------*/
+
+h1 {
+    font-family: "Raleway", serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(243, 87%, 12%);
+    margin-bottom: 20px;
+}
+
+.intro,
+.productivity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 90px;
+    gap: 30px;
+    flex-direction: row-reverse;
+}
+
+.intro .text,
+.productivity .conteudo {
+    flex: 1;
+}
+
+.intro .text p {
+    margin-bottom: 20px;
+}
+
+.intro .image-large,
+.productivity .image-large {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .image-large img,
+.productivity .image-large img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 60px;
+    cursor: pointer;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px rgb(95, 95, 95);
+}
+
+form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 75%);
+    width: 60%;
+    border: 1px rgb(0, 0, 0);
+}
+
+.intro {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/*---------------------------------- seção 2 ----------------------------------*/
+
+h2 {
+    font-family: "Raleway", serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: hsl(243, 87%, 12%);
+    margin-bottom: 20px;
+}
+
+#blue-section {
+    background-color: hsl(240, 75%, 98%);
+    margin-top: -10px;
+}
+
+.conteudo p {
+    margin-bottom: 20px;
+}
+
+span {
+    color: hsl(170, 45%, 43%);
+    font-size: 18px;
+}
+
+blockquote {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1em black;
+    padding: 30px;
+    margin: 10px 300px 70px 0;
+    box-shadow: 0.5px 0.5px 5px rgb(222, 222, 222);
+}
+
+blockquote p {
+    font-size: 12px;
+}
+
+blockquote img {
+    width: 10px;
+    height: 10px;
+}
+
+blockquote .client #client-image {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+blockquote .client {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+.learn-more a {
+    color: hsl(170, 45%, 43%);
+    ;
+}
+
+/*---------------------------------- seção 3 ----------------------------------*/
+
+.early-access {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.early-access .text {
+    flex: 1;
+    color: #fff;
+    margin: 40px 90px;
+}
+
+.early-access form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.early-access button {
+    align-items: start;
+    margin-left: -130px;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+
+.intro {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/*---------------------------------- footer ----------------------------------*/
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+
+}
+
+.attribution,
+.attribution a {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+.footer-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    padding: 10px 0 60px 0px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-links ul li {
+    list-style-type: none;
+}
+
+.contact-info p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.social-links i {
+    margin-left: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff;
+}
+
+.logo-container {
+    padding: 50px 0 0 70px;
+}
+
+/*----------------------------- Responsividade  -----------------------------*/
+
+@media screen and (max-width: 760px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: start;
+    }
+
+    header {
+        margin: 30px;
+    }
+
+    #logo-header {
+        width: 30%;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        ;
+        gap: 10px;
+    }
+
+    .intro,
+    .productivity {
+        flex-direction: column;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .early-access {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #text-intro,
+    .learn-more span {
+        text-align: center;
+    }
+
+    .learn-more {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro .image-large img,
+    .productivity .image-large img {
+        max-width: 80%;
+    }
+
+    form input[type="email"],
+    button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .early-access form {
+        width: 90%;
+    }
+
+    .early-access p {
+        text-align: center;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .early-access button {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    blockquote {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .learn-more {
+        align-items: center;
+    }
+
+    #curve-image {
+        display: none;
+    }
+
+    .social-links i {
+        display: inline-block;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .logo-container {
+        text-align: start;
+        padding: 20px 0 0 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: start;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .contact-info {
+        padding: 20px 0 0 0;
+    }
+
+}
